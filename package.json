@@ -3,10 +3,23 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "node node_modules/react-native/local-cli/cli.js start"
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "mocha --opts test/mocha.opts src/**/__specs__/*.spec.js"
   },
   "dependencies": {
     "react": "^0.14.8",
     "react-native": "^0.22.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.7.4",
+    "babel-preset-airbnb": "^1.1.1",
+    "babel-preset-react-native": "^1.5.6",
+    "chai": "^3.5.0",
+    "chai-enzyme": "^0.4.1",
+    "enzyme": "^2.2.0",
+    "mocha": "^2.4.5",
+    "react-dom": "^0.14.8",
+    "react-native-mock": "0.0.7",
+    "sinon": "^1.17.3"
   }
 }
